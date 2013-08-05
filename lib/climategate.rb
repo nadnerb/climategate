@@ -6,7 +6,7 @@ require 'climategate/client'
 module Climategate
   class << self
 
-    def new(options={})
+    def new
       Climategate::Client.new(Agent.new)
     end
 

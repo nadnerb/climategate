@@ -6,6 +6,10 @@ module Climategate
         RSS::Parser.parse(agent.get(feed_url).content, false).entries
       end
 
+      def entries_from(date)
+        feed.select{ |e| e.updated.content > date }
+      end
+
       private
 
       def feed_url

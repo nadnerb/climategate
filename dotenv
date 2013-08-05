@@ -1,0 +1,3 @@
+CLIMATE_USER=<codeclimate username>
+CLIMATE_PASSWORD=<codeclimate password>
+CLIMATE_APP_ID=<codeclimate app id>
